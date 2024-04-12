@@ -1,6 +1,6 @@
 const returnClarifaiRequestOption = (imageUrl) => {
-  const PAT = '03adb75e76bd4b53bcd987c6c0d7511d';
-  const USER_ID = 'radustana15';       
+  const PAT = process.env.API_CLARIFAI;
+  const USER_ID = 'radustana15';
   const APP_ID = 'my-first-application-y54axn';
   const IMAGE_URL = imageUrl;
   const raw = JSON.stringify({
